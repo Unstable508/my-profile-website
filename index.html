@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Profile</title>
+    <!-- Load Tailwind CSS for easy styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for the Inter font and basic body styling */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5; /* Light gray background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Ensure it takes full viewport height */
+            margin: 0;
+            padding: 20px; /* Add some padding around the content */
+            box-sizing: border-box; /* Include padding in element's total width and height */
+        }
+
+        /* Ensure the main container is centered and responsive */
+        .profile-container {
+            max-width: 800px; /* Max width for larger screens */
+            width: 100%; /* Full width on smaller screens */
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container bg-white shadow-lg rounded-xl p-8 md:p-12 text-center">
+        <!-- Profile Picture Section -->
+        <div class="mb-8">
+            <img src="https://placehold.co/150x150/2563eb/ffffff?text=Your+Photo" alt="Your Profile Photo"
+                class="w-36 h-36 rounded-full mx-auto object-cover border-4 border-blue-500 shadow-md">
+        </div>
+
+        <!-- Name and Title Section -->
+        <h1 class="text-4xl font-extrabold text-gray-900 mb-2">Your Name Here</h1>
+        <p class="text-xl text-blue-600 font-semibold mb-6">Software Developer | Web Enthusiast | Creator</p>
+
+        <!-- About Me Section -->
+        <div class="text-left mb-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-3">About Me</h2>
+            <p class="text-gray-700 leading-relaxed">
+                Hello! I'm a passionate developer with a keen interest in building user-friendly and efficient web applications.
+                I love exploring new technologies and solving complex problems. When I'm not coding, you can find me
+                reading, hiking, or experimenting with new recipes in the kitchen. I'm always eager to learn and
+                contribute to exciting projects.
+            </p>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="text-left mb-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-3">Skills</h2>
+            <div class="flex flex-wrap justify-center md:justify-start gap-3">
+                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-4 py-2 rounded-full shadow-sm">HTML5</span>
+                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-4 py-2 rounded-full shadow-sm">CSS3</span>
+                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-4 py-2 rounded-full shadow-sm">JavaScript</span>
+                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-4 py-2 rounded-full shadow-sm">React.js</span>
+                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-4 py-2 rounded-full shadow-sm">Node.js</span>
+                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-4 py-2 rounded-full shadow-sm">Python</span>
+                <span class="bg-blue-100 text-blue-800 text-sm font-medium px-4 py-2 rounded-full shadow-sm">Git & GitHub</span>
+            </div>
+        </div>
+
+        <!-- Social Links Section -->
+        <div class="mt-8">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Connect With Me</h2>
+            <div class="flex justify-center space-x-6">
+                <!-- GitHub Link -->
+                <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer"
+                    class="text-gray-600 hover:text-gray-900 transition duration-300 transform hover:scale-110">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.47.087.683-.207.683-.456 0-.227-.007-.75-.01-1.477-2.782.604-3.37-1.34-3.37-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.618.069-.606.069-.606 1.003.07 1.531 1.032 1.531 1.032.892 1.529 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.116-4.555-4.949 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.025 2.747-1.025.546 1.379.202 2.398.099 2.65.64.7 1.028 1.595 1.028 2.688 0 3.841-2.339 4.681-4.566 4.935.359.307.678.915.678 1.846 0 1.338-.012 2.419-.012 2.747 0 .247.214.543.688.452C21.137 20.188 24 16.42 24 12.017 24 6.484 19.522 2 14 2h-2z" clip-rule="evenodd" />
+                    </svg>
+                    <span class="sr-only">GitHub</span>
+                </a>
+                <!-- LinkedIn Link -->
+                <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer"
+                    class="text-gray-600 hover:text-gray-900 transition duration-300 transform hover:scale-110">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-7.982v16h7.982v-8.75c0-4.673 5.068-4.325 5.068 0v8.75h7.982v-10.133c0-7.056-4.993-8.197-9.029-8.197z" />
+                    </svg>
+                    <span class="sr-only">LinkedIn</span>
+                </a>
+                <!-- Twitter Link (Optional) -->
+                <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer"
+                    class="text-gray-600 hover:text-gray-900 transition duration-300 transform hover:scale-110">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M8.29 20.251c1.267.737 2.655 1.106 4.095 1.106 4.965 0 9.633-3.957 9.633-9.633 0-.148-.003-.296-.008-.444A6.802 6.802 0 0024 4.31a9.07 9.07 0 01-2.613.717 4.545 4.545 0 002.008-2.518c-.94.558-1.985.96-3.09 1.188a4.54 4.54 0 00-7.735 4.133c-3.774-.189-7.11-1.99-9.344-4.721-.387.66-.609 1.424-.609 2.247 0 1.57.797 2.955 2.008 3.763a4.49 4.49 0 01-2.052-.564v.058c0 2.181 1.55 4.004 3.606 4.425a4.542 4.542 0 01-2.046.078c.573 1.79 2.244 3.093 4.227 3.129-1.543 1.205-3.48 1.928-5.594 1.928-.364 0-.72-.021-1.068-.063.07 1.954 1.13 3.69 2.76 4.69z" />
+                    </svg>
+                    <span class="sr-only">Twitter</span>
+                </a>
+                <!-- Email Link -->
+                <a href="mailto:your.email@example.com"
+                    class="text-gray-600 hover:text-gray-900 transition duration-300 transform hover:scale-110">
+                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M.05 3.555A2 2 0 012 2h20a2 2 0 011.95 1.555L12 12.555zM24 4.5V19a2 2 0 01-2 2H2a2 2 0 01-2-2V4.5l11.95 8L24 4.5z" />
+                    </svg>
+                    <span class="sr-only">Email</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Call to Action / Contact -->
+        <div class="mt-8 pt-8 border-t border-gray-200">
+            <p class="text-gray-600 mb-4">
+                Feel free to reach out if you have any questions or just want to connect!
+            </p>
+            <a href="mailto:your.email@example.com"
+                class="inline-block bg-blue-600 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-blue-700 transition duration-300 transform hover:scale-105">
+                Contact Me
+            </a>
+        </div>
+    </div>
+</body>
+</html>
